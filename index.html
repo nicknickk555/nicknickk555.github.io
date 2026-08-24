@@ -2199,9 +2199,19 @@ header{
   }
 }
 
+  /* NICK555 shared system dock */
+  .nick555-system-nav{position:fixed;z-index:2147483000;left:50%;bottom:14px;transform:translateX(-50%);display:flex;align-items:center;gap:5px;padding:6px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(8,42,54,.94);box-shadow:0 12px 34px rgba(4,28,38,.24);backdrop-filter:blur(16px);font:750 11px/1 Inter,Arial,sans-serif;color:#fff;white-space:nowrap}
+  .nick555-system-nav a{display:flex;align-items:center;min-height:30px;padding:0 11px;border-radius:999px;color:#fff;text-decoration:none;transition:background .16s ease,transform .16s ease}
+  .nick555-system-nav a:hover{background:rgba(107,224,194,.16);transform:translateY(-1px)}
+  .nick555-system-nav a:focus-visible{outline:2px solid #6be0c2;outline-offset:2px}
+  .nick555-system-nav .nick555-home{background:#6be0c2;color:#082a36;font-weight:900;letter-spacing:.08em}
+  .nick555-system-nav .nick555-map{color:#9eead6}
+  .nick555-system-nav .nick555-divider{width:1px;height:20px;background:rgba(255,255,255,.2)}
+  @media(max-width:560px){.nick555-system-nav{bottom:8px;width:calc(100% - 16px);justify-content:center}.nick555-system-nav a{padding:0 8px;font-size:10px}}
 </style>
 </head>
 <body>
+<nav class="nick555-system-nav" aria-label="NICK555 system navigation"><a class="nick555-home" href="https://www.nick555.com/">NICK555</a><span class="nick555-divider" aria-hidden="true"></span><a class="nick555-map" href="https://www.nick555.com/#modules">System map</a><a rel="next" href="https://nicknickk555.github.io/habitat/">Next →</a></nav>
 <div class="page">
   <header>
     <div class="header-copy">
